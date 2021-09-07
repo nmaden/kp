@@ -43,6 +43,46 @@ html {
   font-size: 10px;
 }
 
+.call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.call .call__title {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+.call input {
+  width: 300px;
+  padding:20px;
+  border-radius:  20px !important;
+  color: white !important;
+  margin-bottom: 10px !important;
+}
+.call div {
+  color: black;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 20px !important;
+  background:#ffde00;
+  border:none;
+  outline:none;
+}
+.call div:hover {
+  opacity: 0.8;
+}
+.call ::placeholder {
+  color: white;
+  font-weight: bold;
+}
 @media only screen and (max-width: 1024px) {
   html {
     font-size: 9.375px;
@@ -1158,11 +1198,11 @@ h1.intro-header::before {
   padding: 0;
   outline: 0;
   border: none;
-  /*width: 97px;*/
-  /*height: 40px;*/
-  /*background: url("../images/logo_kp.jpeg") no-repeat center;*/
-  /*background-size: 97px 40px;*/
-  /*font: 0/0 a;*/
+  width: 97px;
+  height: 50px;
+  background: url("../images/logo_kp.jpeg") no-repeat center;
+  background-size: 97px 50px;
+  font: 0/0 a;
   text-shadow: none;
   /*color: transparent;*/
   color:white;
@@ -1335,8 +1375,8 @@ h1.intro-header::before {
 @media only screen and (max-width: 768px) {
   .header-logo a {
     width: 88px;
-    height: 20px;
-    background-size: 88px 20px;
+    height: 40px;
+    background-size: 88px 40px;
   }
   #header-nav-wrap {
     display: none;
@@ -2196,6 +2236,10 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   margin-top: 3rem;
 }
 
+.shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2330,11 +2374,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #testimonial-slider .testimonial-author img {
-  width: 7.4rem;
-  height: 7.4rem;
+  width: 650px;
+  height: 500px;
   margin: 0 auto 1.2rem auto;
   display: block;
-  border-radius: 50%;
+  object-fit: contain;
 }
 
 #testimonial-slider .testimonial-author .author-info {
@@ -2447,8 +2491,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     font-size: 2.6rem;
   }
   #testimonial-slider .testimonial-author img {
-    width: 6.6rem;
-    height: 6.6rem;
+    width: 100%;
+    height: unset;
   }
   #testimonial-slider .testimonial-author .author-info {
     font-size: 1.8rem;
