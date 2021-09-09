@@ -80,7 +80,7 @@ html {
   opacity: 0.8;
 }
 .call ::placeholder {
-  color: white;
+  color: #ccc;
   font-weight: bold;
 }
 @media only screen and (max-width: 1024px) {
