@@ -43,6 +43,22 @@ html {
   font-size: 10px;
 }
 
+.item__gallery {
+  width: 100%;
+  position:absolute;
+  bottom: 10px;
+}
+.item__wrap {
+  flex-wrap: wrap;
+}
+
+.item__gallery img {
+  width: 200px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 3px;
+
+}
 .call {
   display: flex;
   flex-direction: column;
@@ -80,7 +96,7 @@ html {
   opacity: 0.8;
 }
 .call ::placeholder {
-  color: #ccc;
+  color: red;
   font-weight: bold;
 }
 @media only screen and (max-width: 1024px) {
@@ -1993,6 +2009,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   left: -27px;
 }
 
+.about-bottom-image {
+  position:relative;
+}
 .about-bottom-image img {
   vertical-align: bottom;
   border-radius: 20px;
